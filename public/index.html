@@ -7,7 +7,183 @@
     <link href="/css/output.css" rel="stylesheet">
 
 </head>
-<body>
-    
+<body class="bg-gradient-to-br from-golden-light to-amber-50 min-h-screen">
+        <nav class="bg-mars-brown shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-golden-dust">Slasher</span>
+                    <span class="ml-2 text-sm text-golden-light">v0.1</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-golden-light hover:text-golden-dust transition duration-300 font-medium">Home</a>
+                    <a href="#product" class="text-golden-light hover:text-golden-dust transition duration-300 font-medium">Product</a>
+                    <a href="#contact" class="text-golden-light hover:text-golden-dust transition duration-300 font-medium">Contact Us</a>
+                    <a href="#contact" class="text-golden-light hover:text-golden-dust transition duration-300 font-medium">About me</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-golden-light hover:text-golden-dust">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-mars-dark">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-golden-light hover:text-golden-dust transition">Home</a>
+                <a href="#product" class="block px-3 py-2 text-golden-light hover:text-golden-dust transition">Product</a>
+                <a href="#contact" class="block px-3 py-2 text-golden-light hover:text-golden-dust transition">Contact Us</a>
+                <a href="#contact" class="text-golden-light hover:text-golden-dust transition duration-300 font-medium">About me</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+    <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-mars-brown mb-6">
+                Shorten Your Links,<br>
+                <span class="text-golden-dust">Amplify Your Reach</span>
+            </h1>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Transform long, unwieldy URLs into short, memorable links with QuickLink - the next generation URL shortener
+            </p>
+            <button class="bg-mars-brown hover:bg-mars-dark text-golden-light font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Get Started Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="product" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-mars-brown mb-4">Why Choose QuickLink?</h2>
+                <p class="text-gray-600 text-lg">Powerful features designed for modern link management</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">Database Storage</h3>
+                    <p class="text-gray-700">Secure and reliable database storage ensures your URLs are safely stored and instantly accessible whenever you need them.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">URL Management</h3>
+                    <p class="text-gray-700">Comprehensive dashboard to manage, edit, and organize all your shortened URLs in one centralized location with ease.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">Lightning Fast</h3>
+                    <p class="text-gray-700">Experience blazing-fast redirects with our optimized infrastructure that ensures minimal latency for every click.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">Analytics Ready</h3>
+                    <p class="text-gray-700">Built with analytics in mind - track clicks, measure engagement, and understand your audience better.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">Secure & Private</h3>
+                    <p class="text-gray-700">Your data is encrypted and protected with industry-standard security measures to keep your links safe.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-gradient-to-br from-golden-light to-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-mars-brown rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-golden-dust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mars-brown mb-3">Custom Aliases</h3>
+                    <p class="text-gray-700">Create memorable, branded short links with custom aliases that reflect your brand identity.</p>
+                </div>
+            </div>
+
+            <!-- Version Badge -->
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-mars-brown text-golden-dust px-6 py-3 rounded-full font-semibold">
+                    🚀 Currently in Version 0.1 - More exciting features coming soon!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-mars-brown to-mars-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-golden-dust mb-4">Get In Touch</h2>
+                <p class="text-golden-light text-lg">Have questions? We'd love to hear from you.</p>
+            </div>
+
+            <form class="bg-white rounded-lg shadow-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-mars-brown font-semibold mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border-2 border-golden-light rounded-lg focus:border-golden-dust focus:outline-none transition" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-mars-brown font-semibold mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border-2 border-golden-light rounded-lg focus:border-golden-dust focus:outline-none transition" placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-mars-brown font-semibold mb-2">Message</label>
+                    <textarea rows="5" class="w-full px-4 py-2 border-2 border-golden-light rounded-lg focus:border-golden-dust focus:outline-none transition" placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-mars-brown hover:bg-mars-dark text-golden-dust font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-xl">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mars-dark text-golden-light py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2026 Slasher. All rights reserved. | Version 0.1</p>
+        </div>
+    </footer>
 </body>
 </html>
