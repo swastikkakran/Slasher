@@ -1,4 +1,4 @@
-import mongoose, { model, Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const urlSchema = new Schema(
     {
@@ -10,7 +10,9 @@ const urlSchema = new Schema(
             unique: true
         },
         user: {
-
+            type: Schema.ObjectId,
+            ref: "User",
+            required: true
         },
         clicks: {
             type: Number,
